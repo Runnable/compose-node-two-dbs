@@ -6,6 +6,7 @@ services:
       - "7000:7000"
     links:
       - 'rethinkdb'
+      - 'redis'
     environment:
       - RETHINKDB=rethinkdb
       - PORT=7000
