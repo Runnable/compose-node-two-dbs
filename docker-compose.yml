@@ -8,6 +8,7 @@ services:
       - 'rethinkdb'
       - 'redis'
     environment:
+      - HELLO=anton
       - RETHINKDB=rethinkdb
       - PORT=7000
       - REDIS_HOST=redis
@@ -17,5 +18,5 @@ services:
         - "8080"
         - "28015"
         - "29015"
-  redis2:
+  redis:
     image: "redis"    
