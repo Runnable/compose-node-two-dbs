@@ -22,5 +22,5 @@ services:
     image: "redis"    
   redis2:
     image: "redis"   
-  redis3:
+  redis4:
     image: "redis"       
