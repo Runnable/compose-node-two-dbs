@@ -1,6 +1,8 @@
- web:
-  extends:
-    file: common.yml
-    service: app
-  environment:
-    - NAME=extended
+ version: '2'
+ services:
+  web:
+   extends:
+     file: common.yml
+     service: app
+   environment:
+     - NAME=extended
