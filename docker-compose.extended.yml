@@ -2,7 +2,7 @@
  services:
   web:
    extends:
-     file: common.yml
+     file: docker-compose.yml
      service: app
    environment:
      - NAME=extended
