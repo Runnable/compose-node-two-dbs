@@ -11,6 +11,7 @@ services:
       - RETHINKDB=rethinkdb
       - PORT=7000
       - REDIS_HOST=redis
+      - NAME=main
   rethinkdb:
     image: rethinkdb
     ports:
