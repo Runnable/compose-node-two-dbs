@@ -20,7 +20,8 @@ app.get('/', function (req, res) {
     RUNNABLE_CONTAINER_ID: process.env.RUNNABLE_CONTAINER_ID,
     HOSTNAME: process.env.HOSTNAME,
     RETHINKDB: process.env.RETHINKDB,
-    REDIS_HOST: process.env.REDIS_HOST
+    REDIS_HOST: process.env.REDIS_HOST,
+    NAME: process.env.NAME
   }
   res.writeHead(200, {'Content-Type': 'text/plain'})
   if (!process.env.RETHINKDB) {
