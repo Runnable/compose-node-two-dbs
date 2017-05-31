@@ -7,6 +7,9 @@ services:
       - PORT=9000
       - REDIS_HOST=redis
       - NAME=main
+    links:
+      - 'rethinkdb'
+      - 'redis'         
   rethinkdb:
     image: rethinkdb
     ports:
