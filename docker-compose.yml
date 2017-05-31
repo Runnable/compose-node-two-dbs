@@ -2,14 +2,9 @@ version: '2'
 services:
   web:
     build: .
-    ports:
-      - "7000:7000"
-    links:
-      - 'rethinkdb'
-      - 'redis'
     environment:
       - RETHINKDB=rethinkdb
-      - PORT=7000
+      - PORT=9000
       - REDIS_HOST=redis
       - NAME=main
   rethinkdb:

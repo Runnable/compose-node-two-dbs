@@ -4,8 +4,7 @@
     extends:
       file: docker-compose.yml
       service: web
-    links:
-      - 'rethinkdb'
-      - 'redis'      
+    ports:
+      - "9000:9000"
     environment:
       - NAME=extended

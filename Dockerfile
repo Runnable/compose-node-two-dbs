@@ -8,7 +8,7 @@ RUN npm install # runnable-cache
 COPY ["./", "/app/"]
 
 # Open up ports on the container
-EXPOSE 80 8000 8080 3000 7000
+EXPOSE 80 8000 8080 3000 9000
 
 # Command to start the app
 CMD npm start
