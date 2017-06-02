@@ -19,4 +19,6 @@ services:
   redis:
     image: "redis"
   redis5:
+    image: "redis"
+  redis11:
     image: "redis"    
