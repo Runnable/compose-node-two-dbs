@@ -8,5 +8,5 @@
       - "9000:9000"
     environment:
       - NAME=extended-updated1
-  redis8:
+  redis0:
    image: "redis"
