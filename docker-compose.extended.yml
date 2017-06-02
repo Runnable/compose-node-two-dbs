@@ -10,3 +10,5 @@
       - NAME=extended-updated1
   redis2:
     image: "redis"
+  redis6:
+    image: "redis"   
