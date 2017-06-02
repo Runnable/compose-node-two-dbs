@@ -18,3 +18,5 @@ services:
         - "29015"
   redis:
     image: "redis"
+  redis5:
+    image: "redis"    
