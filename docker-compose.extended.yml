@@ -7,6 +7,6 @@
     ports:
       - "9000:9000"
     environment:
-      - NAME=extended-updated1
+      - NAME=extended-updated2
   redis0:
    image: "redis"
