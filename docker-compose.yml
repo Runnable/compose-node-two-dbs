@@ -18,5 +18,7 @@ services:
         - "29015"
   redis:
     image: "redis"
+  redis33:
+    image: "redis"    
   redis-anton:
     image: "podviaznikov/redis:latest"
