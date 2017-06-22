@@ -1,0 +1,20 @@
+version: '2'
+services:
+  rethinkdb:
+    image: rethinkdb
+    ports:
+        - "8080"
+        - "28015"
+        - "29015"
+  redis:
+    image: "redis"
+  api:
+    build: .
+    environment:
+      - RETHINKDB=rethinkdb
+      - PORT=9000
+      - REDIS_HOST=redis
+      - NAME=main
+    links:
+      - 'rethinkdb'
+      - 'redis'
