@@ -1,0 +1,13 @@
+version: '2'
+services:
+  rethinkdb:
+    extends:
+      file: docker-compose.yml
+      service: rethinkdb
+  wb:
+    extends:
+      file: docker-compose.yml
+      service: web
+    environment:
+      - DEBUG=true
+      - NODE_ENV=development
