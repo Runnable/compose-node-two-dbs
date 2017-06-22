@@ -4,9 +4,9 @@ services:
     extends:
       file: dc1.yml
       service: rethinkdb
-  web:
+  api:
     extends:
       file: dc1.yml
-      service: web
+      service: api
     environment:
       - DEBUG=true
