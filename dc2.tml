@@ -1,0 +1,12 @@
+version: '2'
+services:
+  rethinkdb:
+    extends:
+      file: dc1.yml
+      service: rethinkdb
+  web:
+    extends:
+      file: dc1.yml
+      service: web
+    environment:
+      - DEBUG=true
