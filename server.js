@@ -21,7 +21,8 @@ app.get('/', function (req, res) {
     HOSTNAME: process.env.HOSTNAME,
     RETHINKDB: process.env.RETHINKDB,
     REDIS_HOST: process.env.REDIS_HOST,
-    NAME: process.env.NAME
+    NAME: process.env.NAME,
+    HELLO: 'world'
   }
   res.writeHead(200, {'Content-Type': 'text/plain'})
   if (!process.env.RETHINKDB) {
